@@ -9,15 +9,15 @@
 
     <name>ZK FontAwesome</name>
     <description>A ZK wrapper for Font Awesome.</description>
-    <url>https://github.com/connollyst/zkfontawesome</url>
+    <url>https://github.com/aksdb/zkfontawesome</url>
 
     <scm>
-        <url>https://github.com/connollyst/zkfontawesome</url>
+        <url>https://github.com/aksdb/zkfontawesome</url>
         <connection>
-            scm:git:git://github.com/connollyst/zkfontawesome.git
+            scm:git:https://github.com/aksdb/zkfontawesome.git
         </connection>
         <developerConnection>
-            scm:git:git@github.com:connollyst/zkfontawesome.git
+            scm:git:https://github.com/aksdb/zkfontawesome.git
         </developerConnection>
       <tag>HEAD</tag>
   </scm>
@@ -28,6 +28,11 @@
             <name>Sean Connolly</name>
             <email>connolly.st@gmail.com</email>
             <url>seaniscool.com</url>
+        </developer>
+        <developer>
+            <id>aksdb</id>
+            <name>Andreas Schneider</name>
+            <email>aksdb@gmx.de</email>
         </developer>
     </developers>
 
@@ -206,6 +211,9 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
                         <version>1.4</version>
+                        <configuration>
+                            <keyname>aksdb@gmx.de</keyname>
+                        </configuration>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
